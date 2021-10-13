@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Commandes Git</title>
+    <link rel="stylesheet" href="git.css">
+</head>
+
+<body>
+    <header>
+        <img id="logo_header" src="logo_github.png" alt="Logo_header" width="250" height="250px">
+        <h1 id="titre">Commandes Git</h1>
+        <h2 id="titre">Versionner son travail</h2>
+
+    </header>
+
+
+    <main>
+        <div class="tableau">
+            <div>
+                <h3>Versionner en Local</h3>
+                <table>
+                    <tr>
+                        <th>Commandes</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git init</td>
+                        <td class="description">Initialise le dépôt<br>(se mettre sur le bon dossier),<br> mieux à faire depuis github.com</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git add .</td>
+                        <td class="description">Ajoute toutes les <br>modifications le "." symbolise TOUT</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git commit -m "explication</td>
+                        <td class="description">Créer un nouveau commit.<br>
+                            <strong>git add</strong> Pousse les fichier en zone d'index,<br>
+                            <strong>git commmit</strong> les sauvegarde réellement dans un<br>
+                            nouveau commmit</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>Gérer les commits</h3>
+                <table>
+                    <tr>
+                        <th>Commandes</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git log</td>
+                        <td class="description">Liste des commmits</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git log -n2</td>
+                        <td class="description">Affiche les deux derniers commits</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git show</td>
+                        <td class="description">Voir un commit spécifique</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git checkout "sha-1"</td>
+                        <td class="description">Remettre la version du "sha-1"</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git checkout main</td>
+                        <td class="description">Remmettre la version la plus récente</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>Versionner sur un dépôt distant</h3>
+                <table>
+                    <tr>
+                        <th>Commandes</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git clone (lien-github.com) </td>
+                        <td class="description">Récupérer le travail depuis un dépôt distant</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git push -u origin main</td>
+                        <td class="description">Pousse les modifications vers le serveur</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git push -f origin main</td>
+                        <td class="description">Pousse de force des modifications<br>
+                            (à manipuler avec précaution</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>Naviguer dans Git Bash</h3>
+                <table>
+                    <tr>
+                        <th>Commande</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td class="commandes">pwd</td>
+                        <td class="description">Savoir dans quel dossier je suis</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">mkdir "dossier"</td>
+                        <td class="description">Créer un dossier (Make Directory)</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">touch "fichier.txt</td>
+                        <td class="description">Créer un Fichier</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">ls</td>
+                        <td class="description">Liste le dossier courant</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">ls -la</td>
+                        <td class="description">liste tout plus précisément que ls</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">cd "dossier"</td>
+                        <td class="description">Allez dans le dossier (change Directory)</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">cd ..</td>
+                        <td class="description">Remonter d'un dossier</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>Initialisation de Git</h3>
+                <table>
+                    <tr>
+                        <th>Commande</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git config --global user.name</td>
+                        <td class="description">"Mon Nom"</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git config --global user.email</td>
+                        <td class="description">mon@mail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git config --global -- list</td>
+                        <td class="description">Affiche Nom et Mail</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <h3>Autres Commandes</h3>
+                <table>
+                    <tr>
+                        <th>Commande</th>
+                        <th>Description</th>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git statuus</td>
+                        <td class="description">"Etat du fichier</td>
+                    </tr>
+                    <tr>
+                        <td class="commandes">git diff</td>
+                        <td class="description">Affiche les modifs avant commit</td>
+                    </tr>
+                </table>
+            </div>
+        </div>  
+    </main>
+
+
+    <Footer>
+
+    </Footer>
+
+
+</body>
+
+</html>

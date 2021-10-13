@@ -1,0 +1,30 @@
+.commandes {
+    background: linear-gradient(45deg,#6EA4BF,#c2efeb,#ecfee8);
+}
+
+.description {
+background: linear-gradient(45deg,#c2efeb,#c2efeb,#6EA4BF);
+}
+#logo_header {
+    text-align: center;
+    margin: auto;
+    display: flex;
+}
+
+#titre {
+    text-align: center;
+}
+
+.tableau {
+    display: flex;
+    flex-direction: column;
+}
+
+table, th, td {
+    border-collapse: collapse;
+    border: 2px solid rgb(0, 0, 0);
+}
+
+th, td {
+    background-color: beige;
+}
